@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: markdown-backend
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/md_store
+    username: postgres
+    password: root
+  jooq:
+    sql-dialect: POSTGRES
+jwt:
+  secret: yourVeryLongSecretKeyHereThatShouldBeAtLeast32CharactersLong
+  expiration: 86400000  # 24 hours in milliseconds
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        security: DEBUG

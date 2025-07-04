@@ -1,0 +1,19 @@
+POST http://localhost:8080/user/register
+Content-Type: application/json
+
+{
+  "username": "fickerMax",
+  "password": "Mustermann8"
+}
+
+###
+POST http://localhost:8080/user/login
+Content-Type: application/json
+
+{
+  "username": "Max",
+  "password": "Mustermann8"
+}
+
+###
+GET http://localhost:8080/user/Max
